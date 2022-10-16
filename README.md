@@ -28,3 +28,5 @@ The feature of the website which determines the current traffic status around th
 
 ![WhatsApp Image 2022-10-16 at 3 16 13 PM](https://user-images.githubusercontent.com/92366931/196028829-578cb152-0f60-40e6-a72c-dcf76de4b5cf.jpeg)
 
+##### The above three features illustrated above depicts the three stages from which the user can inherit the needed information about the electric charging station and find the best route to reach the EV charging station from the website 
+
