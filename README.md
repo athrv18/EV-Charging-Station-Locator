@@ -555,7 +555,7 @@ Create your own fork of the project.
 ### 2. Clone Your Fork
 
 ```bash
-git clone https://github.com/athrv18/EV-Charging-Station-Locator.git
+git clone https://github.com/YOUR-USERNAME/EV-Charging-Station-Locator.git
 ```
 
 ### 3. Create a Feature Branch
@@ -572,13 +572,13 @@ Implement your changes and test the application.
 
 ```bash
 git add .
-git commit -m "EV-Charging-Station-Locator"
+git commit -m "Add your feature"
 ```
 
 ### 6. Push Your Branch
 
 ```bash
-git push origin feature/EV-Charging-Station-Locator
+git push origin feature/your-feature
 ```
 
 ### 7. Open a Pull Request
