@@ -1,20 +1,44 @@
 # ⚡ EV Charging Station Locator
 
-A modern, responsive, and intelligent **EV Charging Station Locator** designed to help electric vehicle users quickly discover nearby charging stations, view station details, and plan their charging journey efficiently.
+<p align="center">
+  <strong>Find. Charge. Go.</strong>
+</p>
 
-The platform provides an intuitive interface for finding charging stations based on location, exploring station information, and accessing essential charging-related details.
+<p align="center">
+  A modern, responsive, and location-based EV Charging Station Locator that helps electric vehicle users discover nearby charging stations quickly and efficiently.
+</p>
+
+<p align="center">
+  <a href="https://github.com/athrv18/EV-Charging-Station-Locator">
+    <img src="https://img.shields.io/badge/GitHub-Repository-181717?style=for-the-badge&logo=github" alt="GitHub">
+  </a>
+  <img src="https://img.shields.io/badge/React-19-61DAFB?style=for-the-badge&logo=react&logoColor=black" alt="React">
+  <img src="https://img.shields.io/badge/Vite-7-646CFF?style=for-the-badge&logo=vite&logoColor=white" alt="Vite">
+  <img src="https://img.shields.io/badge/Tailwind%20CSS-3-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white" alt="Tailwind CSS">
+  <img src="https://img.shields.io/badge/Mapbox-Maps-000000?style=for-the-badge&logo=mapbox&logoColor=white" alt="Mapbox">
+</p>
 
 ---
 
-## 🚀 Features
+## 📖 Overview
+
+**EV Charging Station Locator** is a web application designed to simplify the process of finding electric vehicle charging stations.
+
+The platform combines **interactive maps, location services, search, filtering, and charging station information** into a single user-friendly interface.
+
+Users can discover nearby charging stations, explore station details, and identify suitable charging locations based on their requirements.
+
+---
+
+## ✨ Key Features
 
 ### 🔍 Charging Station Discovery
 
 * Find nearby EV charging stations
-* Search charging stations by location
-* Interactive map-based station discovery
-* View charging station markers on the map
-* Get detailed station information
+* Search stations by location
+* Interactive map-based discovery
+* Display charging station markers
+* View detailed station information
 
 ### 📍 Location-Based Services
 
@@ -24,16 +48,16 @@ The platform provides an intuitive interface for finding charging stations based
 * Distance-based station discovery
 * Navigation support
 
-### ⚡ Station Information
+### ⚡ Charging Station Information
 
-Each charging station can display information such as:
+Depending on the available station data, users can view:
 
 * Station name
 * Address
 * Distance
 * Charging connector type
-* Charging availability
 * Charging speed
+* Charging availability
 * Operating hours
 * Station provider/network
 * Pricing information
@@ -41,75 +65,63 @@ Each charging station can display information such as:
 
 ### 🗺️ Interactive Map
 
-* Interactive map interface
+* Interactive Mapbox map
 * Charging station markers
-* Map-based station exploration
-* Location visualization
-* Responsive map experience
+* User location visualization
+* Map navigation controls
+* Location-based exploration
+* Responsive map interface
 
 ### 🔎 Search & Filtering
 
-Users can easily find suitable charging stations using:
+Users can find relevant charging stations using:
 
-* Location search
+* Location
+* Distance
 * Connector type
 * Charging speed
 * Availability
-* Distance
 * Station provider
 
-### 📱 Responsive Design
+### 📱 Fully Responsive
 
-The application is designed for:
+Designed to work across:
 
-* Desktop
-* Laptop
-* Tablet
-* Mobile devices
+* 📱 Mobile
+* 📲 Tablet
+* 💻 Laptop
+* 🖥️ Desktop
 
-The UI follows a mobile-first and responsive design approach.
+The interface follows a responsive and mobile-first design approach.
 
 ---
 
 # 🛠️ Tech Stack
 
-## Frontend
-
-* HTML5
-* CSS3
-* JavaScript
-* React.js
-* Vite
-* Tailwind CSS
-
-## Maps & Location
-
-* Mapbox
-* Geolocation API
-
-## Backend / Data
-
-* REST APIs
-* JSON
-* Location-based services
-
-## Development Tools
-
-* Git
-* GitHub
-* Visual Studio Code
-* npm
+| Technology          | Purpose                     |
+| ------------------- | --------------------------- |
+| **React.js**        | Frontend UI                 |
+| **Vite**            | Development & build tooling |
+| **Tailwind CSS**    | Styling & responsive design |
+| **JavaScript**      | Application logic           |
+| **Mapbox**          | Interactive maps            |
+| **Geolocation API** | User location               |
+| **REST APIs**       | Station/location data       |
+| **JSON**            | Data handling               |
+| **npm**             | Package management          |
+| **Git & GitHub**    | Version control             |
+| **VS Code**         | Development environment     |
 
 ---
 
-# 🏗️ Project Architecture
+# 🏗️ Project Structure
 
 ```text
 EV-Charging-Station-Locator/
 │
 ├── public/
 │   ├── favicon
-│   └── assets
+│   └── assets/
 │
 ├── src/
 │   ├── components/
@@ -122,6 +134,9 @@ EV-Charging-Station-Locator/
 │   ├── App.*
 │   └── main.*
 │
+├── docs/
+│   └── screenshots/
+│
 ├── .env.example
 ├── .gitignore
 ├── package.json
@@ -130,13 +145,32 @@ EV-Charging-Station-Locator/
 └── vite.config.*
 ```
 
-> Folder names may vary depending on the current implementation.
+> The exact folder structure may vary depending on the current implementation.
 
 ---
 
 # ⚙️ Getting Started
 
-Follow the instructions below to run the project locally.
+Follow the steps below to run the project locally.
+
+## Prerequisites
+
+Make sure you have installed:
+
+* **Node.js 20+**
+* **npm**
+* **Git**
+* A **Mapbox access token**
+
+Check your versions:
+
+```bash
+node --version
+npm --version
+git --version
+```
+
+---
 
 ## 1. Clone the Repository
 
@@ -144,11 +178,15 @@ Follow the instructions below to run the project locally.
 git clone https://github.com/athrv18/EV-Charging-Station-Locator.git
 ```
 
+---
+
 ## 2. Navigate to the Project
 
 ```bash
 cd EV-Charging-Station-Locator
 ```
+
+---
 
 ## 3. Install Dependencies
 
@@ -156,27 +194,23 @@ cd EV-Charging-Station-Locator
 npm install
 ```
 
+---
+
 ## 4. Configure Environment Variables
 
-Create a `.env` file in the project root.
+Create a `.env` file in the project root:
 
 ```env
 VITE_MAPBOX_TOKEN=your_mapbox_access_token
 ```
 
-Replace:
+Replace `your_mapbox_access_token` with your actual Mapbox token.
 
-```text
-your_mapbox_access_token
-```
+### 🔐 Important
 
-with your actual Mapbox access token.
+Never commit `.env` to GitHub.
 
-### Important
-
-Never commit your `.env` file to GitHub.
-
-Make sure `.gitignore` contains:
+Your `.gitignore` should include:
 
 ```gitignore
 node_modules/
@@ -184,6 +218,7 @@ node_modules/
 .env.local
 .env.*.local
 dist/
+build/
 ```
 
 ---
@@ -196,13 +231,13 @@ Start the development server:
 npm run dev
 ```
 
-The application will normally be available at:
+Vite will display the local development URL in your terminal.
+
+Example:
 
 ```text
 http://localhost:5173
 ```
-
-If Vite selects another port, use the URL displayed in your terminal.
 
 ---
 
@@ -214,7 +249,7 @@ Create an optimized production build:
 npm run build
 ```
 
-Preview the production build locally:
+Preview the production build:
 
 ```bash
 npm run preview
@@ -222,36 +257,52 @@ npm run preview
 
 ---
 
-# 🌍 How It Works
-
-The application follows a simple user flow:
+# 🌍 Application Workflow
 
 ```text
-User Opens Application
-        │
-        ▼
-Allow Location Access
-        │
-        ▼
-Detect Current Location
-        │
-        ▼
-Fetch Nearby Charging Stations
-        │
-        ▼
-Display Stations on Map
-        │
-        ▼
-User Searches / Filters Stations
-        │
-        ▼
-Select Charging Station
-        │
-        ▼
-View Station Details
-        │
-        ▼
-Navigate to Selected Station
+┌─────────────────────────┐
+│      Open Application   │
+└────────────┬────────────┘
+             │
+             ▼
+┌─────────────────────────┐
+│   Allow Location Access │
+└────────────┬────────────┘
+             │
+             ▼
+┌─────────────────────────┐
+│  Detect Current Location│
+└────────────┬────────────┘
+             │
+             ▼
+┌─────────────────────────┐
+│ Find Nearby Stations    │
+└────────────┬────────────┘
+             │
+             ▼
+┌─────────────────────────┐
+│ Display Stations on Map │
+└────────────┬────────────┘
+             │
+             ▼
+┌─────────────────────────┐
+│ Search / Filter Results │
+└────────────┬────────────┘
+             │
+             ▼
+┌─────────────────────────┐
+│ Select Charging Station │
+└────────────┬────────────┘
+             │
+             ▼
+┌─────────────────────────┐
+│ View Station Details    │
+└────────────┬────────────┘
+             │
+             ▼
+┌─────────────────────────┐
+│ Navigate to Station     │
+└─────────────────────────┘
 ```
 
 ---
@@ -260,26 +311,25 @@ Navigate to Selected Station
 
 The application uses **Mapbox** for interactive mapping and location visualization.
 
-Mapbox provides:
+Mapbox enables:
 
 * Interactive maps
-* Location markers
-* Geolocation support
-* Map navigation
+* Charging station markers
 * Location visualization
+* Map navigation
+* User location display
 * Map controls
+* Location-based exploration
 
-You will need a valid Mapbox access token to use the map functionality.
+A valid Mapbox access token is required for map functionality.
 
 ---
 
 # 🔐 Environment Variables
 
-The following environment variables may be required:
-
 | Variable            | Description         | Required |
-| ------------------- | ------------------- | -------- |
-| `VITE_MAPBOX_TOKEN` | Mapbox access token | Yes      |
+| ------------------- | ------------------- | :------: |
+| `VITE_MAPBOX_TOKEN` | Mapbox access token |     ✅    |
 
 Example:
 
@@ -287,124 +337,108 @@ Example:
 VITE_MAPBOX_TOKEN=pk.xxxxxxxxxxxxxxxxx
 ```
 
-### Security
+### Security Guidelines
 
-Do not expose private API keys or secret credentials in the repository.
+Never commit:
 
-Use environment variables instead.
+* API keys
+* Access tokens
+* Passwords
+* `.env` files
+* Private credentials
+
+Use environment variables for sensitive configuration.
 
 ---
 
 # 📸 Screenshots
 
-Add screenshots of the application here.
+> Add your actual project screenshots inside `docs/screenshots/`.
 
-### Home Page
+### 🏠 Home Page
 
-```text
-Add screenshot here
-```
-
-### Charging Station Map
-
-```text
-Add screenshot here
-```
-
-### Station Details
-
-```text
-Add screenshot here
-```
-
-### Mobile Responsive View
-
-```text
-Add screenshot here
-```
-
-Recommended structure:
-
-```text
-docs/
-└── screenshots/
-    ├── home.png
-    ├── map.png
-    ├── station-details.png
-    └── mobile.png
-```
-
-Then display them using:
-
-```markdown
 ![Home Page](docs/screenshots/home.png)
-```
+
+### 🗺️ Charging Station Map
+
+![Charging Station Map](docs/screenshots/map.png)
+
+### ⚡ Station Details
+
+![Station Details](docs/screenshots/station-details.png)
+
+### 📱 Mobile View
+
+![Mobile Responsive View](docs/screenshots/mobile.png)
 
 ---
 
-# ✨ User Experience
+# ✨ UI/UX Design
 
-The application focuses on providing a simple and efficient EV charging experience.
+The application focuses on delivering a clean and efficient EV charging discovery experience.
 
 ### Design Principles
 
-* Clean modern interface
-* Intuitive navigation
+* Modern interface
 * Responsive layouts
-* Accessible UI components
+* Intuitive navigation
+* Accessible UI
+* Clear information hierarchy
 * Fast interactions
-* Clear station information
 * Map-first discovery
 * Mobile-friendly experience
+* Reusable components
 
 ---
 
 # 📊 Core Modules
 
-## 1. Location Module
+## 📍 Location Module
 
 Responsible for:
 
 * Detecting user location
 * Handling location permissions
 * Processing coordinates
-* Finding nearby stations
+* Finding nearby charging stations
 
-## 2. Map Module
+## 🗺️ Map Module
 
 Responsible for:
 
 * Rendering the map
-* Displaying station markers
+* Displaying charging stations
 * Handling map interactions
 * Showing user location
 
-## 3. Search Module
+## 🔎 Search Module
 
 Responsible for:
 
-* Searching locations
-* Finding charging stations
-* Filtering results
-* Sorting stations
+* Location search
+* Station search
+* Filtering
+* Sorting
+* Distance-based discovery
 
-## 4. Station Module
+## ⚡ Station Module
 
 Responsible for:
 
 * Station details
 * Connector information
+* Charging speed
 * Availability
 * Pricing
 * Operating hours
 
-## 5. Navigation Module
+## 🧭 Navigation Module
 
 Responsible for:
 
-* Route assistance
 * Distance calculation
 * Navigation links
+* Route assistance
 
 ---
 
@@ -413,44 +447,48 @@ Responsible for:
 The project follows modern frontend development practices including:
 
 * Component-based architecture
-* Lazy loading where applicable
+* Reusable components
 * Optimized assets
 * Efficient API requests
 * Responsive layouts
-* Production builds using Vite
-* Reusable UI components
+* Vite production builds
+* Environment-based configuration
+* Maintainable project structure
 
 ---
 
-# 📱 Responsive Design
-
-The application supports multiple screen sizes:
+# 📱 Responsive Support
 
 | Device      | Support |
-| ----------- | ------- |
-| 📱 Mobile   | ✅       |
-| 📱 Tablet   | ✅       |
-| 💻 Laptop   | ✅       |
-| 🖥️ Desktop | ✅       |
+| ----------- | :-----: |
+| 📱 Mobile   |    ✅    |
+| 📲 Tablet   |    ✅    |
+| 💻 Laptop   |    ✅    |
+| 🖥️ Desktop |    ✅    |
 
 ---
 
-# 🧪 Testing
+# 🧪 Testing Checklist
 
-Before deploying the application, test:
+Before deployment, verify:
 
-* Location permission
-* Map loading
-* Station markers
-* Search functionality
-* Filters
-* Station details
-* Mobile responsiveness
-* API responses
-* Invalid locations
-* Network failures
+* [ ] Application loads correctly
+* [ ] Map loads successfully
+* [ ] Location permission works
+* [ ] User location is detected
+* [ ] Charging station markers appear
+* [ ] Search works correctly
+* [ ] Filters work correctly
+* [ ] Station details load
+* [ ] Navigation works
+* [ ] Mobile layout works
+* [ ] Tablet layout works
+* [ ] Desktop layout works
+* [ ] API failures are handled
+* [ ] Invalid locations are handled
+* [ ] Production build succeeds
 
-Run the production build:
+Run:
 
 ```bash
 npm run build
@@ -462,10 +500,10 @@ npm run build
 
 ## Map is not loading
 
-Check that your `.env` contains:
+Verify your `.env` file:
 
 ```env
-VITE_MAPBOX_TOKEN=your_token
+VITE_MAPBOX_TOKEN=your_mapbox_access_token
 ```
 
 Then restart the development server:
@@ -478,17 +516,19 @@ npm run dev
 
 ## Dependencies are not installing
 
-Try:
-
-```bash
-rm -rf node_modules
-npm install
-```
-
-On Windows PowerShell:
+### Windows PowerShell
 
 ```powershell
 Remove-Item -Recurse -Force node_modules
+Remove-Item package-lock.json
+npm install
+```
+
+### macOS / Linux
+
+```bash
+rm -rf node_modules
+rm package-lock.json
 npm install
 ```
 
@@ -496,7 +536,7 @@ npm install
 
 ## Environment variable changes are not reflected
 
-Restart Vite after changing `.env`:
+Restart the Vite development server:
 
 ```bash
 npm run dev
@@ -506,39 +546,40 @@ npm run dev
 
 # 🌐 Deployment
 
-The application can be deployed using modern frontend hosting platforms such as:
+The project can be deployed using platforms such as:
 
 * Vercel
 * Netlify
 * Render
 * GitHub Pages
 
-For Vercel deployment:
+Before deployment:
 
 ```bash
 npm run build
 ```
 
-Then configure the required environment variables in the hosting platform.
-
-For example:
+Configure your production environment variable:
 
 ```text
 VITE_MAPBOX_TOKEN
 ```
 
+Do not upload the `.env` file.
+
 ---
 
 # 🔒 Security Best Practices
 
-* Never commit `.env` files
-* Never commit API secrets
-* Never commit `node_modules`
-* Rotate exposed API tokens
-* Use environment variables
-* Validate external API responses
-* Restrict API keys when supported
-* Keep dependencies updated
+* ✅ Never commit `.env`
+* ✅ Never commit API secrets
+* ✅ Never commit `node_modules`
+* ✅ Use environment variables
+* ✅ Rotate exposed credentials
+* ✅ Restrict API keys when possible
+* ✅ Validate API responses
+* ✅ Keep dependencies updated
+* ✅ Use HTTPS in production
 
 ---
 
@@ -546,48 +587,48 @@ VITE_MAPBOX_TOKEN
 
 Contributions are welcome.
 
-### 1. Fork the Repository
+## 1. Fork the Repository
 
-Create your own fork of the project.
+Create a fork of the project on GitHub.
 
-### 2. Clone Your Fork
+## 2. Clone Your Fork
 
 ```bash
 git clone https://github.com/YOUR-USERNAME/EV-Charging-Station-Locator.git
 ```
 
-### 3. Create a Feature Branch
+## 3. Create a Feature Branch
 
 ```bash
 git checkout -b feature/new-feature
 ```
 
-### 4. Make Your Changes
+## 4. Make Your Changes
 
 Implement and test your changes.
 
-### 5. Commit Changes
+## 5. Commit Your Changes
 
 ```bash
 git add .
 git commit -m "Add new feature"
 ```
 
-### 6. Push the Branch
+## 6. Push Your Branch
 
 ```bash
 git push origin feature/new-feature
 ```
 
-### 7. Create a Pull Request
+## 7. Open a Pull Request
 
-Open a Pull Request on GitHub describing your changes.
+Create a Pull Request on GitHub with a clear description of your changes.
 
 ---
 
-# 📌 Future Improvements
+# 🗺️ Roadmap
 
-Planned improvements may include:
+Future improvements may include:
 
 * [ ] Real-time charger availability
 * [ ] EV charging station booking
@@ -598,8 +639,8 @@ Planned improvements may include:
 * [ ] Payment integration
 * [ ] Advanced route planning
 * [ ] EV range estimation
-* [ ] Estimated charging cost
-* [ ] Charging station reviews
+* [ ] Charging cost estimation
+* [ ] Station reviews
 * [ ] Station ratings
 * [ ] Real-time pricing
 * [ ] Dark mode
@@ -612,9 +653,9 @@ Planned improvements may include:
 
 # 📄 License
 
-This project is available under the **MIT License**.
+This project is licensed under the **MIT License**.
 
-See the `LICENSE` file for more information.
+See the `LICENSE` file for complete license information.
 
 ---
 
@@ -622,19 +663,17 @@ See the `LICENSE` file for more information.
 
 ## Atharva
 
-GitHub: **[@athrv18](https://github.com/athrv18)**
+GitHub: [@athrv18](https://github.com/athrv18)
 
-Project Repository:
-
-**EV Charging Station Locator**
+Repository: [EV Charging Station Locator](https://github.com/athrv18/EV-Charging-Station-Locator)
 
 ---
 
 # ⭐ Support
 
-If you find this project useful, consider giving the repository a ⭐ on GitHub.
+If you find this project useful, please consider giving the repository a ⭐ on GitHub.
 
-Your support helps improve and maintain the project.
+Your support is greatly appreciated!
 
 ---
 
@@ -642,12 +681,16 @@ Your support helps improve and maintain the project.
 
 **Status:** 🚀 Active Development
 
-The project is continuously being improved with new features, performance enhancements, and UI/UX improvements.
+The project is continuously being improved with new features, performance optimizations, and UI/UX enhancements.
 
 ---
 
-## ⚡ EV Charging Station Locator
+<div align="center">
+
+### ⚡ EV Charging Station Locator
 
 **Find. Charge. Go.**
 
-Built to make EV charging discovery simpler, faster, and more accessible.
+Built to make EV charging discovery **simpler, faster, and more accessible.**
+
+</div>
