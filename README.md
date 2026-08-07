@@ -5,112 +5,84 @@
 </p>
 
 <p align="center">
-  A modern, responsive, and location-based EV Charging Station Locator that helps electric vehicle users discover nearby charging stations quickly and efficiently.
-</p>
-
-<p align="center">
-  <a href="https://github.com/athrv18/EV-Charging-Station-Locator">
-    <img src="https://img.shields.io/badge/GitHub-Repository-181717?style=for-the-badge&logo=github" alt="GitHub">
-  </a>
-  <img src="https://img.shields.io/badge/React-19-61DAFB?style=for-the-badge&logo=react&logoColor=black" alt="React">
-  <img src="https://img.shields.io/badge/Vite-7-646CFF?style=for-the-badge&logo=vite&logoColor=white" alt="Vite">
-  <img src="https://img.shields.io/badge/Tailwind%20CSS-3-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white" alt="Tailwind CSS">
-  <img src="https://img.shields.io/badge/Mapbox-Maps-000000?style=for-the-badge&logo=mapbox&logoColor=white" alt="Mapbox">
+  A web-based EV Charging Station Locator designed to help electric vehicle users discover charging stations, search locations, check charging availability, calculate distances, find routes, and access traffic-related information.
 </p>
 
 ---
 
-## 📖 Overview
+## 📖 Project Overview
 
-**EV Charging Station Locator** is a web application designed to simplify the process of finding electric vehicle charging stations.
+**EV Charging Station Locator** is a location-focused web application developed to simplify the process of finding and accessing electric vehicle charging stations.
 
-The platform combines **interactive maps, location services, search, filtering, and charging station information** into a single user-friendly interface.
+The application brings together EV station search, charging availability, distance calculation, routing, and traffic-related functionality into a single interface.
 
-Users can discover nearby charging stations, explore station details, and identify suitable charging locations based on their requirements.
+The project is designed with a straightforward web architecture using **HTML, CSS, and JavaScript**, with npm used for project dependency management.
 
----
+### 🎯 Project Objectives
 
-## ✨ Key Features
-
-### 🔍 Charging Station Discovery
-
-* Find nearby EV charging stations
-* Search stations by location
-* Interactive map-based discovery
-* Display charging station markers
-* View detailed station information
-
-### 📍 Location-Based Services
-
-* Detect user's current location
-* Display nearby charging stations
-* Location-based station search
-* Distance-based station discovery
-* Navigation support
-
-### ⚡ Charging Station Information
-
-Depending on the available station data, users can view:
-
-* Station name
-* Address
-* Distance
-* Charging connector type
-* Charging speed
-* Charging availability
-* Operating hours
-* Station provider/network
-* Pricing information
-* Contact information
-
-### 🗺️ Interactive Map
-
-* Interactive Mapbox map
-* Charging station markers
-* User location visualization
-* Map navigation controls
-* Location-based exploration
-* Responsive map interface
-
-### 🔎 Search & Filtering
-
-Users can find relevant charging stations using:
-
-* Location
-* Distance
-* Connector type
-* Charging speed
-* Availability
-* Station provider
-
-### 📱 Fully Responsive
-
-Designed to work across:
-
-* 📱 Mobile
-* 📲 Tablet
-* 💻 Laptop
-* 🖥️ Desktop
-
-The interface follows a responsive and mobile-first design approach.
+* Make EV charging stations easier to discover
+* Provide location-based charging station search
+* Help users check charging availability
+* Calculate distances between locations
+* Provide route-related functionality
+* Provide traffic-related information
+* Create a simple and accessible interface for EV users
 
 ---
 
-# 🛠️ Tech Stack
+# 🚀 Key Features
 
-| Technology          | Purpose                     |
-| ------------------- | --------------------------- |
-| **React.js**        | Frontend UI                 |
-| **Vite**            | Development & build tooling |
-| **Tailwind CSS**    | Styling & responsive design |
-| **JavaScript**      | Application logic           |
-| **Mapbox**          | Interactive maps            |
-| **Geolocation API** | User location               |
-| **REST APIs**       | Station/location data       |
-| **JSON**            | Data handling               |
-| **npm**             | Package management          |
-| **Git & GitHub**    | Version control             |
-| **VS Code**         | Development environment     |
+## 🔋 EV Charging Station Discovery
+
+* Discover EV charging stations
+* Search for charging locations
+* View charging station-related information
+* Location-based station discovery
+
+## ⚡ Charging Availability
+
+* Check charging availability
+* Display charging-related information
+* Support EV users in identifying suitable charging locations
+
+## 🔎 EV Search
+
+* Search for EV charging stations
+* Location-based search functionality
+* Search-oriented interface for charging locations
+
+## 🧭 Routing & Distance Calculation
+
+* Route-related functionality
+* Distance calculation
+* Long-distance calculation
+* Route assistance between locations
+
+## 🚦 Traffic Information
+
+* Traffic-related functionality
+* Traffic information interface
+* Support for traffic-aware travel decisions where implemented
+
+## 📍 Location Services
+
+* Location-based functionality
+* Distance-based calculations
+* Route assistance
+* Location-oriented charging station discovery
+
+---
+
+# 🛠️ Technology Stack
+
+| Technology        | Purpose                                         |
+| ----------------- | ----------------------------------------------- |
+| **HTML5**         | Web page structure and application interfaces   |
+| **CSS3**          | Styling, layouts, and user interface design     |
+| **JavaScript**    | Application logic and interactive functionality |
+| **Node.js / npm** | Project dependency and package management       |
+
+> Additional libraries or APIs are included only where they are actually configured in the project.
 
 ---
 
@@ -119,50 +91,262 @@ The interface follows a responsive and mobile-first design approach.
 ```text
 EV-Charging-Station-Locator/
 │
-├── public/
-│   ├── favicon
-│   └── assets/
+├── .vscode/
+├── image/
+├── node_modules/
 │
-├── src/
-│   ├── components/
-│   ├── pages/
-│   ├── services/
-│   ├── hooks/
-│   ├── utils/
-│   ├── assets/
-│   ├── styles/
-│   ├── App.*
-│   └── main.*
-│
-├── docs/
-│   └── screenshots/
-│
-├── .env.example
 ├── .gitignore
+│
+├── calculateLongDistance.js
+├── chargingAvailability.js
+├── ev_model.js
+├── ev_routing.js
+├── ev_search.js
+├── traffic.js
+│
+├── ev_routing.html
+├── ev_search.html
+├── home.html
+├── index.html
+├── traffic.html
+│
+├── index.css
+├── sign.css
+├── styles.css
+│
 ├── package.json
 ├── package-lock.json
-├── README.md
-└── vite.config.*
+└── README.md
 ```
 
-> The exact folder structure may vary depending on the current implementation.
+### 📂 File & Directory Description
+
+| File / Directory           | Description                                       |
+| -------------------------- | ------------------------------------------------- |
+| `.vscode/`                 | Visual Studio Code project configuration          |
+| `image/`                   | Images and visual assets used by the project      |
+| `node_modules/`            | Installed npm dependencies                        |
+| `.gitignore`               | Specifies files and directories excluded from Git |
+| `calculateLongDistance.js` | Handles long-distance calculation functionality   |
+| `chargingAvailability.js`  | Handles charging availability functionality       |
+| `ev_model.js`              | Contains EV-related application logic             |
+| `ev_routing.js`            | Handles EV routing functionality                  |
+| `ev_search.js`             | Handles EV charging station search functionality  |
+| `traffic.js`               | Handles traffic-related functionality             |
+| `ev_routing.html`          | EV routing interface                              |
+| `ev_search.html`           | EV charging station search interface              |
+| `home.html`                | Main/home interface                               |
+| `index.html`               | Main HTML entry point                             |
+| `traffic.html`             | Traffic information interface                     |
+| `index.css`                | Main stylesheet                                   |
+| `sign.css`                 | Styling related to sign-in/sign-up interfaces     |
+| `styles.css`               | General application styling                       |
+| `package.json`             | Project metadata and npm configuration            |
+| `package-lock.json`        | Locked npm dependency versions                    |
+| `README.md`                | Project documentation                             |
+
+> `node_modules/` is generated by npm and should normally not be committed to GitHub. It is included above because it exists in the current local project structure.
 
 ---
 
-# ⚙️ Getting Started
+# 🔄 Application Workflow
 
-Follow the steps below to run the project locally.
+```text
+                    ┌──────────────────────┐
+                    │        User          │
+                    └──────────┬───────────┘
+                               │
+                               ▼
+                    ┌──────────────────────┐
+                    │   Open Application   │
+                    └──────────┬───────────┘
+                               │
+                               ▼
+                    ┌──────────────────────┐
+                    │ Search / Select Area │
+                    └──────────┬───────────┘
+                               │
+                               ▼
+                    ┌──────────────────────┐
+                    │ Find EV Stations     │
+                    └──────────┬───────────┘
+                               │
+                  ┌────────────┼────────────┐
+                  ▼            ▼            ▼
+             ┌─────────┐ ┌──────────┐ ┌──────────┐
+             │ Search  │ │Charging  │ │ Distance │
+             │ Station │ │Availability│ │Calculation│
+             └────┬────┘ └─────┬────┘ └────┬─────┘
+                  │             │           │
+                  └─────────────┼───────────┘
+                                ▼
+                     ┌────────────────────┐
+                     │ Routing / Traffic  │
+                     └─────────┬──────────┘
+                               │
+                               ▼
+                     ┌────────────────────┐
+                     │ Selected Location  │
+                     └────────────────────┘
+```
+
+---
+
+# ⚙️ How It Works
+
+The application is divided into multiple functional pages and JavaScript modules.
+
+### 1. Station Search
+
+Users can use the EV search functionality to find relevant charging locations.
+
+The search functionality is handled through:
+
+```text
+ev_search.html
+ev_search.js
+```
+
+### 2. Charging Availability
+
+The charging availability module provides functionality related to determining charging station availability.
+
+```text
+chargingAvailability.js
+```
+
+### 3. Distance Calculation
+
+Distance-related calculations are handled by the JavaScript calculation module.
+
+```text
+calculateLongDistance.js
+```
+
+### 4. EV Routing
+
+The routing section provides functionality related to finding routes for EV users.
+
+```text
+ev_routing.html
+ev_routing.js
+```
+
+### 5. Traffic Information
+
+Traffic-related functionality is provided through:
+
+```text
+traffic.html
+traffic.js
+```
+
+---
+
+# 📊 Core Modules
+
+## `calculateLongDistance.js`
+
+Responsible for functionality related to calculating longer distances between locations.
+
+## `chargingAvailability.js`
+
+Responsible for charging availability-related functionality.
+
+## `ev_model.js`
+
+Contains EV-related application logic and model functionality.
+
+## `ev_routing.js`
+
+Handles routing-related functionality for EV users.
+
+## `ev_search.js`
+
+Handles EV charging station search functionality.
+
+## `traffic.js`
+
+Handles traffic-related functionality and interactions.
+
+---
+
+# 🖥️ User Interface
+
+The application contains multiple HTML interfaces:
+
+### 🏠 Home
+
+```text
+home.html
+```
+
+Provides the main application interface and entry point for users.
+
+### 🔎 EV Search
+
+```text
+ev_search.html
+```
+
+Provides the charging station search interface.
+
+### 🧭 EV Routing
+
+```text
+ev_routing.html
+```
+
+Provides the routing interface.
+
+### 🚦 Traffic
+
+```text
+traffic.html
+```
+
+Provides traffic-related information and functionality.
+
+### 🌐 Main Entry
+
+```text
+index.html
+```
+
+Acts as the primary HTML entry point of the application.
+
+---
+
+# 🎨 Styling
+
+The project uses CSS for the application's visual design and layout.
+
+### `index.css`
+
+Provides primary page-level styling.
+
+### `styles.css`
+
+Contains general styling used throughout the application.
+
+### `sign.css`
+
+Contains styling related to sign-in/sign-up interfaces.
+
+---
+
+# ⚙️ Installation & Setup
 
 ## Prerequisites
 
-Make sure you have installed:
+Make sure the following are installed:
 
-* **Node.js 20+**
-* **npm**
-* **Git**
-* A **Mapbox access token**
+* [Node.js](https://nodejs.org/)
+* npm
+* Git
+* A modern web browser
 
-Check your versions:
+Check the installed versions:
 
 ```bash
 node --version
@@ -194,468 +378,220 @@ cd EV-Charging-Station-Locator
 npm install
 ```
 
+This installs the dependencies defined in `package.json`.
+
 ---
 
-## 4. Configure Environment Variables
+## 4. Run the Project
 
-Create a `.env` file in the project root:
+Use the appropriate command defined in the project's `package.json`.
 
-```env
-VITE_MAPBOX_TOKEN=your_mapbox_access_token
-```
+If the project does not contain a development/start script, the HTML application can be opened through a local development server such as **VS Code Live Server**.
 
-Replace `your_mapbox_access_token` with your actual Mapbox token.
+> Do not open API-dependent functionality directly with `file://` if the browser or API requires a local HTTP server.
 
-### 🔐 Important
+---
 
-Never commit `.env` to GitHub.
+# 🔐 Security
 
-Your `.gitignore` should include:
+Security is important when working with location services and external APIs.
+
+### Best Practices
+
+* Never commit API keys or access tokens
+* Never commit passwords or private credentials
+* Keep sensitive configuration outside publicly accessible source files
+* Keep `.gitignore` properly configured
+* Do not commit `node_modules/`
+* Validate user-provided input
+* Validate external API responses
+* Keep npm dependencies updated
+* Use HTTPS when deploying the application
+
+### `.gitignore`
+
+The repository should contain appropriate exclusions such as:
 
 ```gitignore
 node_modules/
 .env
 .env.local
-.env.*.local
 dist/
-build/
 ```
 
----
-
-# ▶️ Run the Application
-
-Start the development server:
-
-```bash
-npm run dev
-```
-
-Vite will display the local development URL in your terminal.
-
-Example:
-
-```text
-http://localhost:5173
-```
-
----
-
-# 🏭 Production Build
-
-Create an optimized production build:
-
-```bash
-npm run build
-```
-
-Preview the production build:
-
-```bash
-npm run preview
-```
-
----
-
-# 🌍 Application Workflow
-
-```text
-┌─────────────────────────┐
-│      Open Application   │
-└────────────┬────────────┘
-             │
-             ▼
-┌─────────────────────────┐
-│   Allow Location Access │
-└────────────┬────────────┘
-             │
-             ▼
-┌─────────────────────────┐
-│  Detect Current Location│
-└────────────┬────────────┘
-             │
-             ▼
-┌─────────────────────────┐
-│ Find Nearby Stations    │
-└────────────┬────────────┘
-             │
-             ▼
-┌─────────────────────────┐
-│ Display Stations on Map │
-└────────────┬────────────┘
-             │
-             ▼
-┌─────────────────────────┐
-│ Search / Filter Results │
-└────────────┬────────────┘
-             │
-             ▼
-┌─────────────────────────┐
-│ Select Charging Station │
-└────────────┬────────────┘
-             │
-             ▼
-┌─────────────────────────┐
-│ View Station Details    │
-└────────────┬────────────┘
-             │
-             ▼
-┌─────────────────────────┐
-│ Navigate to Station     │
-└─────────────────────────┘
-```
-
----
-
-# 🗺️ Map Integration
-
-The application uses **Mapbox** for interactive mapping and location visualization.
-
-Mapbox enables:
-
-* Interactive maps
-* Charging station markers
-* Location visualization
-* Map navigation
-* User location display
-* Map controls
-* Location-based exploration
-
-A valid Mapbox access token is required for map functionality.
-
----
-
-# 🔐 Environment Variables
-
-| Variable            | Description         | Required |
-| ------------------- | ------------------- | :------: |
-| `VITE_MAPBOX_TOKEN` | Mapbox access token |     ✅    |
-
-Example:
-
-```env
-VITE_MAPBOX_TOKEN=pk.xxxxxxxxxxxxxxxxx
-```
-
-### Security Guidelines
-
-Never commit:
-
-* API keys
-* Access tokens
-* Passwords
-* `.env` files
-* Private credentials
-
-Use environment variables for sensitive configuration.
-
----
-
-# 📸 Screenshots
-
-> Add your actual project screenshots inside `docs/screenshots/`.
-
-### 🏠 Home Page
-
-![Home Page](docs/screenshots/home.png)
-
-### 🗺️ Charging Station Map
-
-![Charging Station Map](docs/screenshots/map.png)
-
-### ⚡ Station Details
-
-![Station Details](docs/screenshots/station-details.png)
-
-### 📱 Mobile View
-
-![Mobile Responsive View](docs/screenshots/mobile.png)
-
----
-
-# ✨ UI/UX Design
-
-The application focuses on delivering a clean and efficient EV charging discovery experience.
-
-### Design Principles
-
-* Modern interface
-* Responsive layouts
-* Intuitive navigation
-* Accessible UI
-* Clear information hierarchy
-* Fast interactions
-* Map-first discovery
-* Mobile-friendly experience
-* Reusable components
-
----
-
-# 📊 Core Modules
-
-## 📍 Location Module
-
-Responsible for:
-
-* Detecting user location
-* Handling location permissions
-* Processing coordinates
-* Finding nearby charging stations
-
-## 🗺️ Map Module
-
-Responsible for:
-
-* Rendering the map
-* Displaying charging stations
-* Handling map interactions
-* Showing user location
-
-## 🔎 Search Module
-
-Responsible for:
-
-* Location search
-* Station search
-* Filtering
-* Sorting
-* Distance-based discovery
-
-## ⚡ Station Module
-
-Responsible for:
-
-* Station details
-* Connector information
-* Charging speed
-* Availability
-* Pricing
-* Operating hours
-
-## 🧭 Navigation Module
-
-Responsible for:
-
-* Distance calculation
-* Navigation links
-* Route assistance
-
----
-
-# 🚀 Performance
-
-The project follows modern frontend development practices including:
-
-* Component-based architecture
-* Reusable components
-* Optimized assets
-* Efficient API requests
-* Responsive layouts
-* Vite production builds
-* Environment-based configuration
-* Maintainable project structure
-
----
-
-# 📱 Responsive Support
-
-| Device      | Support |
-| ----------- | :-----: |
-| 📱 Mobile   |    ✅    |
-| 📲 Tablet   |    ✅    |
-| 💻 Laptop   |    ✅    |
-| 🖥️ Desktop |    ✅    |
+Only add environment-file rules if the project actually uses environment variables.
 
 ---
 
 # 🧪 Testing Checklist
 
-Before deployment, verify:
+Before deploying the application, verify the following:
 
-* [ ] Application loads correctly
-* [ ] Map loads successfully
-* [ ] Location permission works
-* [ ] User location is detected
-* [ ] Charging station markers appear
-* [ ] Search works correctly
-* [ ] Filters work correctly
-* [ ] Station details load
-* [ ] Navigation works
-* [ ] Mobile layout works
-* [ ] Tablet layout works
-* [ ] Desktop layout works
-* [ ] API failures are handled
-* [ ] Invalid locations are handled
-* [ ] Production build succeeds
-
-Run:
-
-```bash
-npm run build
-```
+* [ ] Home page loads correctly
+* [ ] EV search functionality works
+* [ ] Charging availability functionality works
+* [ ] Distance calculation works
+* [ ] EV routing works
+* [ ] Traffic page works
+* [ ] Navigation between pages works
+* [ ] Images and assets load correctly
+* [ ] CSS styles load correctly
+* [ ] Application works on desktop
+* [ ] Application works on mobile
+* [ ] Invalid user input is handled
+* [ ] API/network failures are handled appropriately
 
 ---
 
-# 🐛 Troubleshooting
+# 📸 Screenshots
 
-## Map is not loading
+Add actual project screenshots here to showcase the application.
 
-Verify your `.env` file:
+Recommended screenshots:
 
-```env
-VITE_MAPBOX_TOKEN=your_mapbox_access_token
+### 🏠 Home Page
+
+```text
+Add actual home page screenshot here
 ```
 
-Then restart the development server:
+### 🔎 EV Search
 
-```bash
-npm run dev
+```text
+Add actual EV search screenshot here
 ```
+
+### ⚡ Charging Availability
+
+```text
+Add actual charging availability screenshot here
+```
+
+### 🧭 EV Routing
+
+```text
+Add actual routing screenshot here
+```
+
+### 🚦 Traffic
+
+```text
+Add actual traffic screenshot here
+```
+
+> Do not use fake screenshot links. Replace these placeholders with screenshots from the actual application.
 
 ---
 
-## Dependencies are not installing
+# 🚀 Performance & Usability
 
-### Windows PowerShell
+The project focuses on providing a straightforward experience for EV users through:
 
-```powershell
-Remove-Item -Recurse -Force node_modules
-Remove-Item package-lock.json
-npm install
-```
-
-### macOS / Linux
-
-```bash
-rm -rf node_modules
-rm package-lock.json
-npm install
-```
-
----
-
-## Environment variable changes are not reflected
-
-Restart the Vite development server:
-
-```bash
-npm run dev
-```
+* Simple navigation
+* Dedicated functional pages
+* Location-oriented functionality
+* Search functionality
+* Distance calculations
+* Routing support
+* Traffic-related information
+* Responsive styling where implemented
 
 ---
 
 # 🌐 Deployment
 
-The project can be deployed using platforms such as:
+Because the project is primarily built using HTML, CSS, and JavaScript, it can be hosted on a static web hosting platform if all required functionality supports client-side deployment.
 
-* Vercel
-* Netlify
-* Render
+Possible hosting platforms include:
+
 * GitHub Pages
+* Netlify
+* Vercel
+* Render
 
 Before deployment:
 
-```bash
-npm run build
-```
-
-Configure your production environment variable:
-
-```text
-VITE_MAPBOX_TOKEN
-```
-
-Do not upload the `.env` file.
+1. Test all pages.
+2. Verify external API functionality.
+3. Check required configuration.
+4. Ensure no secrets are committed.
+5. Test the application on desktop and mobile.
+6. Verify all relative paths and assets.
 
 ---
 
-# 🔒 Security Best Practices
+# 🗺️ Future Improvements
 
-* ✅ Never commit `.env`
-* ✅ Never commit API secrets
-* ✅ Never commit `node_modules`
-* ✅ Use environment variables
-* ✅ Rotate exposed credentials
-* ✅ Restrict API keys when possible
-* ✅ Validate API responses
-* ✅ Keep dependencies updated
-* ✅ Use HTTPS in production
+The following features can be considered for future versions:
+
+* [ ] Real-time charging station availability
+* [ ] Live traffic updates
+* [ ] Charging station booking
+* [ ] User authentication
+* [ ] User profiles
+* [ ] Favorite charging stations
+* [ ] Charging history
+* [ ] EV range estimation
+* [ ] Charging cost estimation
+* [ ] Station reviews and ratings
+* [ ] Advanced route optimization
+* [ ] Multiple route comparison
+* [ ] Mobile application
+* [ ] Admin dashboard
+* [ ] Charging station management system
+* [ ] Improved accessibility
+* [ ] Progressive Web App support
 
 ---
 
 # 🤝 Contributing
 
-Contributions are welcome.
+Contributions and improvements are welcome.
 
-## 1. Fork the Repository
+### 1. Fork the Repository
 
-Create a fork of the project on GitHub.
+Create your own fork of the project.
 
-## 2. Clone Your Fork
-
-```bash
-git clone https://github.com/YOUR-USERNAME/EV-Charging-Station-Locator.git
-```
-
-## 3. Create a Feature Branch
+### 2. Clone Your Fork
 
 ```bash
-git checkout -b feature/new-feature
+git clone https://github.com/athrv18/EV-Charging-Station-Locator.git
 ```
 
-## 4. Make Your Changes
+### 3. Create a Feature Branch
 
-Implement and test your changes.
+```bash
+git checkout -b feature/your-feature
+```
 
-## 5. Commit Your Changes
+### 4. Make Your Changes
+
+Implement your changes and test the application.
+
+### 5. Commit Your Changes
 
 ```bash
 git add .
-git commit -m "Add new feature"
+git commit -m "EV-Charging-Station-Locator"
 ```
 
-## 6. Push Your Branch
+### 6. Push Your Branch
 
 ```bash
-git push origin feature/new-feature
+git push origin feature/EV-Charging-Station-Locator
 ```
 
-## 7. Open a Pull Request
+### 7. Open a Pull Request
 
-Create a Pull Request on GitHub with a clear description of your changes.
-
----
-
-# 🗺️ Roadmap
-
-Future improvements may include:
-
-* [ ] Real-time charger availability
-* [ ] EV charging station booking
-* [ ] User authentication
-* [ ] User profiles
-* [ ] Favorite stations
-* [ ] Charging history
-* [ ] Payment integration
-* [ ] Advanced route planning
-* [ ] EV range estimation
-* [ ] Charging cost estimation
-* [ ] Station reviews
-* [ ] Station ratings
-* [ ] Real-time pricing
-* [ ] Dark mode
-* [ ] PWA support
-* [ ] Push notifications
-* [ ] Admin dashboard
-* [ ] Analytics dashboard
+Create a Pull Request and provide a clear description of the changes.
 
 ---
 
 # 📄 License
 
-This project is licensed under the **MIT License**.
+No license file is currently included in the provided project structure.
 
-See the `LICENSE` file for complete license information.
+If you intend to make the project open source, you can add an appropriate `LICENSE` file, such as the MIT License.
 
 ---
 
@@ -663,34 +599,26 @@ See the `LICENSE` file for complete license information.
 
 ## Atharva
 
-GitHub: [@athrv18](https://github.com/athrv18)
+**GitHub:** [@athrv18](https://github.com/athrv18)
 
-Repository: [EV Charging Station Locator](https://github.com/athrv18/EV-Charging-Station-Locator)
-
----
-
-# ⭐ Support
-
-If you find this project useful, please consider giving the repository a ⭐ on GitHub.
-
-Your support is greatly appreciated!
+**Repository:** [EV Charging Station Locator](https://github.com/athrv18/EV-Charging-Station-Locator)
 
 ---
 
 # 📈 Project Status
 
-**Status:** 🚀 Active Development
+**🚀 Active Development**
 
-The project is continuously being improved with new features, performance optimizations, and UI/UX enhancements.
+The EV Charging Station Locator is an ongoing project focused on improving EV station discovery, location-based services, routing, charging availability, and traffic-related functionality.
 
 ---
 
 <div align="center">
 
-### ⚡ EV Charging Station Locator
+## ⚡ EV Charging Station Locator
 
-**Find. Charge. Go.**
+### Find. Charge. Go.
 
-Built to make EV charging discovery **simpler, faster, and more accessible.**
+**Making EV charging station discovery simpler and more accessible.**
 
 </div>
